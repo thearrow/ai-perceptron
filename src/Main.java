@@ -10,7 +10,7 @@ public class Main {
             } else if (args[0].equalsIgnoreCase("test")) {
                 Trainer tester = new Trainer(args[1]);
                 Neuron n = new Neuron("neuron.dat");
-                tester.test(n);
+                tester.test(n, true);
             }
         }
 

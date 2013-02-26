@@ -23,20 +23,8 @@ public class Example {
         return new Double(target);
     }
 
-    public void setTarget(String target) {
-        this.target = target;
-    }
-
-    public Double getAttribute(int a) {
-        return attributes.get(a);
-    }
-
     public ArrayList<Double> getAttributes() {
         return attributes;
-    }
-
-    public int numAttributes() {
-        return attributes.size();
     }
 
     public String toString() {

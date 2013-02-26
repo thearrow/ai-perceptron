@@ -1,0 +1,44 @@
+Jacob Klingler
+klingler.45@osu.edu
+klinglej
+
+AI Homework #4 - Single Perceptron
+
+COMPILE:
+    (in klinglerHW4 folder):
+    javac *.java
+
+RUN:
+    TRAIN:
+        java Main train train.txt
+        ...where train.txt is training data
+
+    TEST:
+        java Main test test.txt
+        ...where test.txt is testing data
+
+
+ABOUT:
+    Program implements a single perceptron with N inputs and a
+    logistic activation function. A bias term (input always = -1)
+    is included in the perceptron. Input files should be in the
+    format given in the assignment examples:
+
+    3
+    0.53,0.75,0.43,0
+    0.8,0.74,0.46,1
+    0.55,0.61,0.69,0
+    ...etc...
+
+    The first line is ignored, number of inputs/weights is determined
+    lazily by the first line of data.
+    After the neuron is trained it is saved to neuron.dat.
+    The neuron is then loaded from this file for testing.
+
+RESULTS:
+    I tested the program using the sample training/test data
+    given in the assignment.
+    Output from the neuron is rounded to the nearest integer (0|1).
+
+
+

@@ -2,23 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cbf6195-7b65-4e9b-be24-861094993d7a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Example.java" afterPath="$PROJECT_DIR$/src/Example.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Trainer.java" afterPath="$PROJECT_DIR$/src/Trainer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test.txt" afterPath="$PROJECT_DIR$/src/test.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/train.txt" afterPath="$PROJECT_DIR$/src/train.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ai-perceptron.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Main.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361845949748" ignored="false" />
-    <file path="/Dummy.txt" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361849490614" ignored="false" />
+    <file path="/Main.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361853455456" ignored="false" />
+    <file path="/Dummy.txt" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361850095024" ignored="false" />
     <file path="/a.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361810900758" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/modules.xml" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361811186706" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/misc.xml" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361811186706" ignored="false" />
     <file path="/Neuron.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361849256784" ignored="false" />
-    <file path="/fragment.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361849555802" ignored="false" />
-    <file path="/Trainer.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361849898206" ignored="false" />
+    <file path="/fragment.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361852060784" ignored="false" />
+    <file path="/Trainer.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361853488548" ignored="false" />
     <file path="/Example.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361846570909" ignored="false" />
     <file path="/train.txt" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361849519273" ignored="false" />
+    <file path="/README" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361852759204" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +83,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="8" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
+            <state line="15" column="35" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -90,7 +92,7 @@
       <file leaf-file-name="Trainer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Trainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="26" selection-start="967" selection-end="967" vertical-scroll-proportion="0.5988258">
+            <state line="61" column="44" selection-start="1824" selection-end="1824" vertical-scroll-proportion="1.6726907">
               <folding />
             </state>
           </provider>
@@ -103,6 +105,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="4" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,11 +137,12 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/neuron.dat" />
-        <option value="$PROJECT_DIR$/src/Example.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Neuron.java" />
         <option value="$PROJECT_DIR$/src/train.txt" />
         <option value="$PROJECT_DIR$/src/test.txt" />
+        <option value="$PROJECT_DIR$/src/Example.java" />
+        <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Trainer.java" />
       </list>
     </option>
@@ -226,7 +238,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="Errors" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../hw3/src/hw3/TreeManager.java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../hw3/src/README.txt" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -319,9 +331,45 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="2">
+    <configuration default="false" name="reverse-train" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="train src/test.txt" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ai-perceptron" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="reverse-test" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="test src/train.txt" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ai-perceptron" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.test" />
-      <item index="1" class="java.lang.String" itemvalue="Application.train" />
+      <item index="1" class="java.lang.String" itemvalue="Application.reverse-train" />
+      <item index="2" class="java.lang.String" itemvalue="Application.reverse-test" />
+      <item index="3" class="java.lang.String" itemvalue="Application.train" />
     </list>
     <recent_temporary>
       <list size="1">
@@ -356,7 +404,11 @@
       <created>1361849492428</created>
       <updated>1361849492428</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="real data and better testing">
+      <created>1361850097180</created>
+      <updated>1361850097180</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -425,7 +477,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="training/testing basics done" />
+    <option name="LAST_COMMIT_MESSAGE" value="real data and better testing" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -441,27 +493,12 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="basic in/out and skeleton done" />
     <MESSAGE value="training/testing basics done" />
+    <MESSAGE value="real data and better testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Neuron.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="55" selection-start="1699" selection-end="1699" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="40" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Trainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="17" selection-start="907" selection-end="907" vertical-scroll-proportion="0.0">
@@ -507,30 +544,9 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Example.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="541" selection-end="541" vertical-scroll-proportion="0.093023255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/neuron.dat">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="22" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="8" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="16" selection-start="867" selection-end="867" vertical-scroll-proportion="1.2093023">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/train.txt">
@@ -543,6 +559,37 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../hw3/src/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="1583" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="28" selection-start="0" selection-end="265" vertical-scroll-proportion="0.5737052">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Example.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="5" selection-start="581" selection-end="581" vertical-scroll-proportion="0.7826087">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="4" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Neuron.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="0" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0">
@@ -552,9 +599,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="35" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Trainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="26" selection-start="967" selection-end="967" vertical-scroll-proportion="0.5988258">
+        <state line="61" column="44" selection-start="1824" selection-end="1824" vertical-scroll-proportion="1.6726907">
           <folding />
         </state>
       </provider>
