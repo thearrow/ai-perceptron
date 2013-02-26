@@ -6,6 +6,7 @@ public class Neuron implements Serializable {
 
     private ArrayList<Double> weights;
     private boolean weightsInitialized = false;
+    private double biasTerm = 1.0;
 
     public Neuron() {
         weights = new ArrayList<Double>();
@@ -29,26 +30,34 @@ public class Neuron implements Serializable {
         return weights;
     }
 
+    public Double getWeightSum() {
+        double sum = 0.0;
+        for (Double w : this.weights) {
+            sum += w;
+        }
+        return sum;
+    }
+
     public double activate(ArrayList<Double> inputs) {
         if (!weightsInitialized) {
-            //initialize weights including extra bias term weight
-            Random gen = new Random();
+            //initialize weights (including extra bias term weight)
             for (int i = 0; i <= inputs.size(); i++) {
-                this.weights.add(gen.nextDouble());
+                this.weights.add(0.0);
             }
             weightsInitialized = true;
         }
-        double input = 0.0, output = 0.0;
+        double input = 0.0, output;
 
         //calculate sum of weighted inputs
         for (int i = 0; i < inputs.size(); i++) {
             input += inputs.get(i) * weights.get(i);
         }
-        //plus bias term
-        input += -1.0 * weights.get(inputs.size());
+        //plus bias * last weight
+        input += biasTerm * weights.get(inputs.size());
 
         //calculate logistic function
         output = 1.0 / (1.0 + Math.exp(-input));
+
         return output;
     }
 
@@ -59,11 +68,11 @@ public class Neuron implements Serializable {
         //update weights
         for (int i = 0; i < inputs.size(); i++) {
             Double w = weights.get(i);
-            w += rate * out * error * inputs.get(i);
+            w += rate * error * inputs.get(i);
             weights.set(i, w);
         }
         //plus bias term
-        double biasWeight = weights.get(inputs.size()) + (rate * out * error * -1.0);
+        double biasWeight = weights.get(inputs.size()) + (rate * out * error * biasTerm);
         weights.set(inputs.size(), biasWeight);
 
         return error;

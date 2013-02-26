@@ -31,14 +31,14 @@ public class Trainer {
         }
     }
 
-    public void train(Neuron n, double learnrate) {
+    public void train(Neuron n, double learnrate, double acceptableError) {
 
         double error = 99999999.0;
         int i = 0, iterations = 0;
-        while (error > 0.01) {
-            if (i == data.size()) {
+
+        while (error > acceptableError || iterations < data.size()) {
+            if (i == data.size())
                 i = 0;
-            }
             Example e = data.get(i);
             n.train(e.getAttributes(), e.getTarget(), learnrate);
             error = this.test(n, false);
@@ -53,21 +53,23 @@ public class Trainer {
 
     public double test(Neuron n, boolean output) {
         int correct = 0, total = 0;
+        double error = 0.0;
 
         for (Example e : data) {
-            int expected = (int) Math.round(e.getTarget());
-            int actual = (int) Math.round(n.activate(e.getAttributes()));
+            double expected = e.getTarget();
+            double actual = n.activate(e.getAttributes());
+            error += (expected - actual);
             if (output)
-                System.out.println("Expected:" + expected + " Actual:" + actual);
-            if (expected == actual) {
+                System.out.println(e + " Prediction:" + (int) Math.round(actual));
+            if ((int) Math.round(expected) == (int) Math.round(actual))
                 correct++;
-            }
             total++;
         }
 
         if (output)
-            System.out.println("Got " + correct + "/" + total + " examples correct. (" + (double) correct / (double) total * 100 + "%)");
-        return 1.0 - ((double) correct / (double) total);
+            System.out.println("Got " + correct + "/" + total + " examples correct. (" +
+                    (double) correct / (double) total * 100 + "%)");
+        return Math.abs(error / total);
     }
 
 }
