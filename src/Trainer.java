@@ -39,11 +39,11 @@ public class Trainer {
             if (i == data.size()) {
                 i = 0;
                 iterations++;
+                System.out.println(error);
             }
             Example e = data.get(i);
             n.train(e.getAttributes(), e.getTarget(), learnrate);
             error = this.test(n, false);
-            System.out.println(error);
             i++;
             examples++;
         }
@@ -60,18 +60,19 @@ public class Trainer {
         for (Example e : data) {
             double expected = e.getTarget();
             double actual = n.activate(e.getAttributes());
-            error += (expected - actual);
             if (output)
                 System.out.println(e + " Prediction:" + (int) Math.round(actual));
             if ((int) Math.round(expected) == (int) Math.round(actual))
                 correct++;
+            else
+                error++;
             total++;
         }
 
         if (output)
             System.out.println("Got " + correct + "/" + total + " examples correct. (" +
                     (double) correct / (double) total * 100 + "%)");
-        return Math.abs(error / total);
+        return (error / total);
     }
 
 }

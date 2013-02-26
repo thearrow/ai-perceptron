@@ -6,7 +6,7 @@ public class Main {
             if (args[0].equalsIgnoreCase("train")) {
                 Trainer trainer = new Trainer(args[1]);
                 Neuron n = new Neuron();
-                trainer.train(n, 0.3, 0.000001);
+                trainer.train(n, 0.3, 0.0001);
             } else if (args[0].equalsIgnoreCase("test")) {
                 Trainer tester = new Trainer(args[1]);
                 Neuron n = new Neuron("neuron.dat");

@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7cbf6195-7b65-4e9b-be24-861094993d7a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/and.txt" />
+    <list default="true" id="7cbf6195-7b65-4e9b-be24-861094993d7a" name="Default" comment="cleanup and fixed training">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Neuron.java" afterPath="$PROJECT_DIR$/src/Neuron.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Trainer.java" afterPath="$PROJECT_DIR$/src/Trainer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ai-perceptron.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Main.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361913478748" ignored="false" />
-    <file path="/Dummy.txt" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361912397368" ignored="false" />
+    <file path="/Dummy.txt" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361913878384" ignored="false" />
     <file path="/a.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361810900758" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/modules.xml" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361811186706" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/misc.xml" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361811186706" ignored="false" />
     <file path="/Neuron.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361909368877" ignored="false" />
     <file path="/fragment.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361912258627" ignored="false" />
-    <file path="/Trainer.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361912594327" ignored="false" />
+    <file path="/Trainer.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361914132121" ignored="false" />
     <file path="/Example.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361846570909" ignored="false" />
     <file path="/train.txt" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361849519273" ignored="false" />
     <file path="/README" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361852759204" ignored="false" />
@@ -83,7 +81,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="44" selection-start="311" selection-end="311" vertical-scroll-proportion="0.2818004">
+            <state line="16" column="34" selection-start="549" selection-end="549" vertical-scroll-proportion="0.5636008">
               <folding />
             </state>
           </provider>
@@ -92,8 +90,10 @@
       <file leaf-file-name="Trainer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Trainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="0" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="43" column="58" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,9 +132,9 @@
         <option value="$PROJECT_DIR$/src/Example.java" />
         <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/src/and.txt" />
+        <option value="$PROJECT_DIR$/src/Neuron.java" />
         <option value="$PROJECT_DIR$/src/Trainer.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Neuron.java" />
       </list>
     </option>
   </component>
@@ -445,7 +445,11 @@
       <created>1361853673089</created>
       <updated>1361853673089</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="cleanup and fixed training">
+      <created>1361913872335</created>
+      <updated>1361913872335</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -514,7 +518,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleanup and readme. training still needs work." />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup and fixed training" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -532,6 +536,7 @@
     <MESSAGE value="training/testing basics done" />
     <MESSAGE value="real data and better testing" />
     <MESSAGE value="cleanup and readme. training still needs work." />
+    <MESSAGE value="cleanup and fixed training" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -632,14 +637,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Trainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="43" column="58" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="44" selection-start="311" selection-end="311" vertical-scroll-proportion="0.2818004">
+        <state line="16" column="34" selection-start="549" selection-end="549" vertical-scroll-proportion="0.5636008">
           <folding />
         </state>
       </provider>
