@@ -31,14 +31,25 @@ public class Trainer {
         }
     }
 
-    public void train(Neuron n) {
+    public void train(Neuron n, double learnrate) {
 
-        //implement training
+        Double err = 99999.0;
+        while (err > 0.05) {
+            for (Example e : data) {
+                err = Math.abs(n.train(e.getAttributes(), e.getTarget(), learnrate));
+                System.out.println(err);
+            }
+        }
 
+        System.out.println("Weights Learned: " + n.getWeights());
         n.save();
     }
 
     public void test(Neuron n) {
+
+        for (Example e : data) {
+            System.out.println("Expected:" + (int) Math.round(e.getTarget()) + " Actual:" + (int) Math.round(n.activate(e.getAttributes())));
+        }
 
     }
 

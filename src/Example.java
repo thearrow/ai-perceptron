@@ -2,11 +2,11 @@ import java.util.ArrayList;
 
 public class Example {
 
-    ArrayList<Integer> attributes;
+    ArrayList<Double> attributes;
     private String target;
 
     public Example(String str) {
-        attributes = new ArrayList<Integer>();
+        attributes = new ArrayList<Double>();
         String[] attrs = str.split(",");
         for (int i = 0; i < attrs.length - 1; i++) {
             this.addAttribute(attrs[i]);
@@ -15,20 +15,24 @@ public class Example {
     }
 
     public void addAttribute(String value) {
-        Integer atr = new Integer(value);
+        Double atr = new Double(value);
         attributes.add(atr);
     }
 
-    public String getTarget() {
-        return target;
+    public Double getTarget() {
+        return new Double(target);
     }
 
     public void setTarget(String target) {
         this.target = target;
     }
 
-    public Integer getAttribute(int a) {
+    public Double getAttribute(int a) {
         return attributes.get(a);
+    }
+
+    public ArrayList<Double> getAttributes() {
+        return attributes;
     }
 
     public int numAttributes() {
@@ -38,7 +42,7 @@ public class Example {
     public String toString() {
         StringBuilder result = new StringBuilder();
         result.append("(");
-        for (Integer a : attributes) {
+        for (Double a : attributes) {
             result.append(a);
             result.append(", ");
         }

@@ -1,25 +1,20 @@
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Neuron implements Serializable {
 
-    private ArrayList<Double> inputs, weights;
+    private ArrayList<Double> weights;
+    private boolean weightsInitialized = false;
 
     public Neuron() {
-        inputs = new ArrayList<Double>();
         weights = new ArrayList<Double>();
-
-        //add bias term
-        inputs.add(-1.0);
-        weights.add(0.5);
     }
 
     public Neuron(String fileName) {
         try {
             ObjectInputStream reader = new ObjectInputStream(new FileInputStream(fileName));
-            Neuron n = new Neuron();
-            n = (Neuron) reader.readObject();
-            this.inputs = n.getInputs();
+            Neuron n = (Neuron) reader.readObject();
             this.weights = n.getWeights();
 
             reader.close();
@@ -30,34 +25,48 @@ public class Neuron implements Serializable {
         }
     }
 
-    public ArrayList<Double> getInputs() {
-        return inputs;
-    }
-
     public ArrayList<Double> getWeights() {
         return weights;
     }
 
-    public double activate(double[] inputs) {
-        this.setInputs(inputs);
+    public double activate(ArrayList<Double> inputs) {
+        if (!weightsInitialized) {
+            //initialize weights including extra bias term weight
+            Random gen = new Random();
+            for (int i = 0; i <= inputs.size(); i++) {
+                this.weights.add(gen.nextDouble());
+            }
+            weightsInitialized = true;
+        }
         double input = 0.0, output = 0.0;
 
         //calculate sum of weighted inputs
-        for (int i = 0; i < this.inputs.size(); i++) {
-            input += this.inputs.get(i) * weights.get(i);
+        for (int i = 0; i < inputs.size(); i++) {
+            input += inputs.get(i) * weights.get(i);
         }
+        //plus bias term
+        input += -1.0 * weights.get(inputs.size());
 
         //calculate logistic function
         output = 1.0 / (1.0 + Math.exp(-input));
         return output;
     }
 
-    public void setInputs(double[] inputs) {
-        for (double in : inputs) {
-            this.inputs.add(in);
-            //initialize weight for input
-            this.weights.add(0.5);
+    public Double train(ArrayList<Double> inputs, Double target, Double rate) {
+        double out = this.activate(inputs);
+        double error = target - out;
+
+        //update weights
+        for (int i = 0; i < inputs.size(); i++) {
+            Double w = weights.get(i);
+            w += rate * out * error * inputs.get(i);
+            weights.set(i, w);
         }
+        //plus bias term
+        double biasWeight = weights.get(inputs.size()) + (rate * out * error * -1.0);
+        weights.set(inputs.size(), biasWeight);
+
+        return error;
     }
 
     public void save() {
