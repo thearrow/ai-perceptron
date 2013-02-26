@@ -32,22 +32,24 @@ public class Trainer {
     }
 
     public void train(Neuron n, double learnrate, double acceptableError) {
-
         double error = 99999999.0;
-        int i = 0, iterations = 0;
+        int i = 0, examples = 0, iterations = 0;
 
-        while (error > acceptableError || iterations < data.size()) {
-            if (i == data.size())
+        while (error > acceptableError || iterations == 0) {
+            if (i == data.size()) {
                 i = 0;
+                iterations++;
+            }
             Example e = data.get(i);
             n.train(e.getAttributes(), e.getTarget(), learnrate);
             error = this.test(n, false);
             System.out.println(error);
             i++;
-            iterations++;
+            examples++;
         }
 
-        System.out.println("Weights Learned: " + n.getWeights() + " In " + iterations + " iterations.");
+        System.out.println("Weights Learned: " + n.getWeights() +
+                "\nIn " + iterations + " iterations (" + (examples - 1) + " examples).");
         n.save();
     }
 

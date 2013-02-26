@@ -30,30 +30,20 @@ public class Neuron implements Serializable {
         return weights;
     }
 
-    public Double getWeightSum() {
-        double sum = 0.0;
-        for (Double w : this.weights) {
-            sum += w;
-        }
-        return sum;
-    }
-
     public double activate(ArrayList<Double> inputs) {
         if (!weightsInitialized) {
             //initialize weights (including extra bias term weight)
-            for (int i = 0; i <= inputs.size(); i++) {
+            for (int i = 0; i <= inputs.size(); i++)
                 this.weights.add(0.0);
-            }
             weightsInitialized = true;
         }
         double input = 0.0, output;
 
         //calculate sum of weighted inputs
-        for (int i = 0; i < inputs.size(); i++) {
-            input += inputs.get(i) * weights.get(i);
-        }
+        for (int i = 0; i < inputs.size(); i++)
+            input += (inputs.get(i) * weights.get(i));
         //plus bias * last weight
-        input += biasTerm * weights.get(inputs.size());
+        input += (biasTerm * weights.get(inputs.size()));
 
         //calculate logistic function
         output = 1.0 / (1.0 + Math.exp(-input));
@@ -72,7 +62,7 @@ public class Neuron implements Serializable {
             weights.set(i, w);
         }
         //plus bias term
-        double biasWeight = weights.get(inputs.size()) + (rate * out * error * biasTerm);
+        double biasWeight = weights.get(inputs.size()) + (rate * error * biasTerm);
         weights.set(inputs.size(), biasWeight);
 
         return error;
