@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7cbf6195-7b65-4e9b-be24-861094993d7a" name="Default" comment="cleanup and fixed training">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Trainer.java" afterPath="$PROJECT_DIR$/src/Trainer.java" />
+    <list default="true" id="7cbf6195-7b65-4e9b-be24-861094993d7a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ai-perceptron.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Main.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361913478748" ignored="false" />
-    <file path="/Dummy.txt" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361913878384" ignored="false" />
+    <file path="/Dummy.txt" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361914889047" ignored="false" />
     <file path="/a.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361810900758" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/modules.xml" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361811186706" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/misc.xml" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361811186706" ignored="false" />
     <file path="/Neuron.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361909368877" ignored="false" />
-    <file path="/fragment.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361912258627" ignored="false" />
+    <file path="/fragment.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361914397237" ignored="false" />
     <file path="/Trainer.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361914132121" ignored="false" />
     <file path="/Example.java" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361846570909" ignored="false" />
     <file path="/train.txt" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361849519273" ignored="false" />
-    <file path="/README" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361852759204" ignored="false" />
+    <file path="/README" changelist="7cbf6195-7b65-4e9b-be24-861094993d7a" time="1361915036504" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,10 +77,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="34" selection-start="549" selection-end="549" vertical-scroll-proportion="0.5636008">
+            <state line="16" column="34" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -102,6 +101,15 @@
         <entry file="file://$PROJECT_DIR$/src/Neuron.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="42" column="48" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="0" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.81017613">
               <folding />
             </state>
           </provider>
@@ -130,11 +138,11 @@
         <option value="$PROJECT_DIR$/src/train.txt" />
         <option value="$PROJECT_DIR$/src/test.txt" />
         <option value="$PROJECT_DIR$/src/Example.java" />
-        <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/src/and.txt" />
         <option value="$PROJECT_DIR$/src/Neuron.java" />
         <option value="$PROJECT_DIR$/src/Trainer.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/README" />
       </list>
     </option>
   </component>
@@ -449,7 +457,15 @@
       <created>1361913872335</created>
       <updated>1361913872335</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="tweak error calculation during training">
+      <created>1361914349486</created>
+      <updated>1361914349486</updated>
+    </task>
+    <task id="LOCAL-00010" summary="finish up README">
+      <created>1361914890539</created>
+      <updated>1361914890539</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -518,7 +534,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleanup and fixed training" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish up README" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -537,6 +553,8 @@
     <MESSAGE value="real data and better testing" />
     <MESSAGE value="cleanup and readme. training still needs work." />
     <MESSAGE value="cleanup and fixed training" />
+    <MESSAGE value="tweak error calculation during training" />
+    <MESSAGE value="finish up README" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -603,11 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="4" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/train.txt">
       <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
         <state />
@@ -628,13 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Neuron.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="48" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Trainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="58" selection-start="1245" selection-end="1245" vertical-scroll-proportion="0.0">
@@ -644,9 +650,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Neuron.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="48" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="34" selection-start="549" selection-end="549" vertical-scroll-proportion="0.5636008">
+        <state line="16" column="34" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.81017613">
           <folding />
         </state>
       </provider>
